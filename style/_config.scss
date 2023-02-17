@@ -1,0 +1,45 @@
+//Colour setup
+$primary-colour: #0b090a;
+$primary-light: #181d16;
+$primary-lightest: #1d241a;
+$secondary-colour: #bc4b51;
+$secondary-colour-light: #ffffff;
+$secondary-colour-lighest: #f1f1e4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// Mixins
+@mixin background {
+  background-image: url(/img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background: #070303ee;
+  }
+}
+
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+}
+@mixin hover {
+  color: #bb696d;
+}

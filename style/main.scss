@@ -1,0 +1,188 @@
+@import "_config";
+@import "_hamburger";
+
+//Colour setup
+$primary-colour: #0b090a;
+$primary-light: #181d16;
+$primary-lightest: #1d241a;
+$secondary-colour: #bc4b51;
+$secondary-colour-light: #fcefef;
+$secondary-colour-lighest: #f1f1e4;
+
+body {
+  @include background;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    display: inline-block;
+    margin: 5vh 5vw;
+    text-align: end;
+    h1 {
+      font-size: 5rem;
+      color: $secondary-colour-light;
+    }
+    h2 {
+      margin-left: 2rem;
+      margin-bottom: 0.5rem;
+      color: $secondary-colour;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+    .icons {
+      margin-left: 4rem;
+
+      a {
+        color: $secondary-colour-lighest;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        @include transition;
+        &:hover {
+          @include hover;
+        }
+      }
+    }
+  }
+}
+
+//NAVLINKS
+
+.nav-menu {
+  display: flex;
+  margin: 10vh 5vw;
+}
+.nav-item {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  &.current > a {
+    color: $secondary-colour;
+  }
+
+  a {
+    color: $secondary-colour-lighest;
+    margin-right: 1rem;
+    @include transition;
+    &:hover {
+      @include hover;
+    }
+  }
+}
+
+//ABOUT ME
+
+.about {
+  margin: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  .headshot {
+    width: 175px;
+    border: 3px solid $secondary-colour;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  .about-me {
+    padding: 1rem 3rem;
+    color: $secondary-colour-light;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+//FOLIO
+
+.folio {
+  margin: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  color: $secondary-colour-light;
+  text-align: center;
+  h3 {
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+  }
+  .item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid $secondary-colour-light;
+    @include transition;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.btn-light,
+.btn-dark {
+  background-color: $secondary-colour-light;
+  padding: 0.5rem;
+  color: #0b090a;
+  font-weight: 800;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  @include transition;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.btn-dark {
+  background-color: $secondary-colour;
+}
+
+//CONTACT FORM
+
+form {
+  background-color: #bc4b51a2;
+  border-radius: 0.5rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 60%;
+  max-width: 700px;
+  color: $secondary-colour-light;
+  font-weight: bold;
+
+  label {
+    margin-bottom: 1rem;
+  }
+  input {
+    margin-bottom: 2rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  textarea {
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  .send-btn {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      background-color: $secondary-colour;
+    }
+  }
+}
+
+@import "_media";

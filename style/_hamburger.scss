@@ -1,0 +1,66 @@
+$primary-colour: #0b090a;
+$primary-light: #181d16;
+$primary-lightest: #1d241a;
+$secondary-colour: #bc4b51;
+$secondary-colour-light: #ffffff;
+$secondary-colour-lighest: #f1f1e4;
+
+/* Hamburger menu */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #bc4b51;
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .hamburger.active {
+    transform: rotate(180deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    height: 23vh;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  .nav-menu.active {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+  }
+}

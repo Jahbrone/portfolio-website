@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Ed Ruben Portfolio</title>
+  </head>
+  <body class="contact-page">
+    <!-- <section class="page-container"> -->
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <header class="contact-page-header">
+      <div class="title">
+        <h1>Ed Ruben</h1>
+        <h2>Front End & Web Development</h2>
+        <div class="icons">
+          <a href="mailto:eddy_ruben@hotmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://www.facebook.com/ed.ruben.3/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edward-ruben-1a61b1193/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Jahbrone?tab=stars" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <nav id="nav-menu">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">HOME</a></li>
+          <!-- <li class="nav-item"><a href="#">ABOUT</a></li> -->
+          <li class="nav-item"><a href="folio.html">FOLIO</a></li>
+          <li class="nav-item current"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder="name..." />
+
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="email..." />
+
+        <label for="message">MESSAGE</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="write message here..."
+        ></textarea>
+        <input class="send-btn" type="submit" value="SEND" />
+      </form>
+    </main>
+    <!-- </section> -->
+    <!-- <footer><p>Copyright &copy; Ed Ruben 2023</p></footer> -->
+    <!-- JavaScript-->
+    <script src="app.js"></script>
+  </body>
+</html>
