@@ -70,7 +70,7 @@
   }
 }
 body {
-  background-image: url(..img/background.jpg);
+  background-image: url(/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
@@ -314,7 +314,6 @@ form .send-btn:hover {
   .folio h3 {
     margin: 0 3rem 2rem 3rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(188, 75, 81, 0.5137254902);
   }
   form {
     margin-top: 0;

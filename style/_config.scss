@@ -21,7 +21,7 @@ $secondary-colour-lighest: #f1f1e4;
 
 // Mixins
 @mixin background {
-  background-image: url(..img/background.jpg);
+  background-image: url(/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
