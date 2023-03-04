@@ -6,6 +6,7 @@ $primary-colour: #0b090a;
 $primary-light: #181d16;
 $primary-lightest: #1d241a;
 $secondary-colour: #bc4b51;
+$secondary-colour-op: #bc4b5183;
 $secondary-colour-light: #fcefef;
 $secondary-colour-lighest: #f1f1e4;
 
@@ -75,22 +76,28 @@ header {
 //ABOUT ME
 
 .about {
-  margin: 5vw;
+  margin: 10vh 5vw;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
+
   .headshot {
     width: 175px;
     border: 3px solid $secondary-colour;
     border-radius: 50%;
     opacity: 0.8;
+    justify-self: flex-end;
+    align-self: center;
   }
   .about-me {
-    padding: 1rem 3rem;
+    padding: 0 3rem;
     color: $secondary-colour-light;
 
     h3 {
       font-size: 2rem;
       margin-bottom: 1rem;
+    }
+    .bio {
+      padding-bottom: 8px;
     }
   }
 }
@@ -105,7 +112,13 @@ header {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 2px;
-  border-bottom: groove 1px #bc4b51;
+}
+.line {
+  display: none;
+  height: 3px;
+  // background-color: $secondary-colour-op;
+  border-top: 1px solid $secondary-colour-op;
+  border-bottom: 1px solid $secondary-colour-op;
 }
 
 .folio {
@@ -115,11 +128,14 @@ header {
   grid-gap: 5rem;
   color: $secondary-colour-light;
   text-align: center;
+
   h3 {
     font-weight: 400;
     font-size: 1.75rem;
-    margin-bottom: 3rem;
     letter-spacing: 2px;
+    // border-bottom: 1px solid $secondary-colour-op;
+    margin: 0 4rem 2rem 4rem;
+    padding-bottom: 0.5rem;
   }
   .item {
     margin-bottom: 1rem;
