@@ -11,7 +11,8 @@ $secondary-colour-light: #fcefef;
 $secondary-colour-lighest: #f1f1e4;
 
 body {
-  @include background;
+  // @include background;
+  background: #070303ee;
 }
 
 header {
@@ -208,6 +209,7 @@ form {
     @include transition;
     &:hover {
       background-color: $secondary-colour;
+      color: $secondary-colour-lighest;
     }
   }
 }

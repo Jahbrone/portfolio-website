@@ -70,19 +70,6 @@
   }
 }
 body {
-  background-image: url(/img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-}
-body:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  min-height: 100%;
-  z-index: -1;
   background: rgba(7, 3, 3, 0.9333333333);
 }
 
@@ -269,6 +256,7 @@ form .send-btn {
 }
 form .send-btn:hover {
   background-color: #bc4b51;
+  color: #f1f1e4;
 }
 
 @media (max-width: 768px) {
@@ -324,9 +312,11 @@ form .send-btn:hover {
   }
   form input {
     margin-bottom: 0.8rem;
+    font-size: 1rem;
   }
   form textarea {
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1171px) {
