@@ -129,8 +129,10 @@ header .title .icons a:hover {
 
 .about {
   margin: 10vh 5vw;
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .about .headshot {
   width: 175px;
@@ -333,5 +335,8 @@ form .send-btn:hover {
     margin: 0 auto;
     max-width: 90%;
     justify-content: space-between;
+  }
+  .about {
+    max-width: 70%;
   }
 }/*# sourceMappingURL=main.css.map */
